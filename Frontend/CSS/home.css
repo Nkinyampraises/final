@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;/* Allows scrolling while keeping the scroll bars hidden For Chrome, Safari, and Edge */
+}
+.title {
+    font-style: oblique;
+    font-size: 60px;
+}
+
+.container1 {
+    height: 1OOvh;
+}
+
+.row1 {
+    height: 60vh;
+    width: 100%;
+    padding-top: 0.1px;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../Images/orphansimage1.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: rgb(248, 249, 250);
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7fa6fa;;
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+.row2 {
+    height: 185px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fdfcffd2
+}
+
+.row3 {
+    height: 255px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    top: 76.2%;
+    color: black;
+    background-color: #7fa6fa;
+}
+
+a {
+    color: black;
+    text-align: center;
+    background-color: #7fa6fa;
+    padding: 10px 25px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px
+}
+
+a:hover {
+    color: blue
+}
+.donation-image {
+    width: 80px;
+    max-height: 50px;
+    margin: 0;
+}
+
+.registration-image {
+    width: 100px;
+    max-height: 60px;
+    margin: 0;
+}
+
+.button {
+    background-color: aliceblue;
+    color: #000;
+}

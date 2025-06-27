@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image:url(../Images/image.jpg) ;
+    background-color: rgb(196, 158, 232);
+    background-blend-mode: darken;
+}
+
+.login-container {
+    background-color:#7fa6fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    width: 30%; 
+    text-align: right;
+    margin-right: 10px; 
+}
+
+input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.signup {
+    margin-top: 10px; 
+    color: #5a5a5a;
+    text-decoration: none; 
+}
+
+.signup:hover {
+    text-decoration: underline; 
+}
+
+button {
+    background-color: #121a12; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}

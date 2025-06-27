@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Money Transfer</title>
+    <link rel="stylesheet" href="../CSS/payment.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>ORPHANAGE CONNECT</h1>
+    <label for="receiver">Receiver phone number</label>
+    <input type="text" id="receiver" placeholder="Enter phone number (MTN/Orange)" />
+
+    <label for="reciever">Reciever's name</label>
+    <input trype="text" id="reciever" placeholder="Enter name" />
+
+    <label for="amount">Amount (Franc CFA)</label>
+    <input type="number" id="amount" placeholder="Enter amount to send" />
+
+    <div class="checkbox-label">
+        <input type="checkbox" id="cashout" />
+        <label for="cashout">I pay the cashout fee 0 frs</label>
+    </div>
+
+    <label for="sender">Sender phone number</label>
+    <input type="text" id="sender" placeholder="Enter your phone number" />
+
+    <button class="dial-button">Dial:*126*<span id="dial9">9</span>*<span id="dialReceiver">Receiver</span>*<span id="dialAmount">Amount</span>#</button>
+</div>
+
+<script>
+    const receiverInput = document.getElementById('receiver');
+    const amountInput = document.getElementById('amount');
+    const dialButton = document.querySelector('.dial-button');
+
+    dialButton.addEventListener('click', () => {
+        const receiver = receiverInput.value;
+        const amount = amountInput.value;
+        document.getElementById('dialReceiver').innerText = receiver;
+        document.getElementById('dialAmount').innerText = amount;
+    });
+</script>
+
+</body>
+</html>
